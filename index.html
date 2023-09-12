@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/styles.css">
+  <!-- Agrega esto en la sección HEAD de tu documento HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha384-v3hpwOaD4n2dlGgy5HyA/zZ4JzzgPOsFqwzBo9RU+ktqjCq6GGb3C1ktOPlzIeV" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="assets/assets/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/assets/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/assets/favicon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script defer src="assets/slide.js"></script>
+  <script defer src="assets/slide2.js"></script>
+  <title>Proyecto | Portafolio de diseño de página única</title>
+
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <div class="header-logo-container">
+    <section class="header-section">
+      <picture class="logo-black">
+        <img src="assets/assets/favicon.png" alt="logo">
+      </picture>
+      <div class="social-icons">
+        <i class="fab fa-twitter" style="color: black; font-size: 32px;"></i>
+        <i class="fab fa-github" style="color: black; font-size: 32px;"></i>
+        <i class="fab fa-linkedin" style="color: black; font-size: 32px;"></i>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="header-section-container">
+    <section class="header-section-content">
+      <div>
+        <h1>Soluciones de diseño fáciles de usar</h1>
+        <p>Con más de diez años de experiencia en diversas disciplinas de diseño, soy su ventanilla única para sus necesidades de diseño.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contenido -->
+  <div class="skill-section-container">
+    <section class="skills-categories">
+      <div class="graphic-design">
+        <picture class="content-icons">
+          <img class="icon1" src="assets/assets/pattern-graphic-design.svg" alt="graphic-design">
+        </picture>
+        <h2>Diseño Gráfico</h2>
+      </div>
+      
+     
+      <div class="box-skills1">
+        <div class="ui-ux">
+          <picture class="content-icons">
+            <img class="icon1" src="assets/assets/pattern-ui-ux.svg" alt="ui-ux">
+          </picture>
+          <h2>UI/UX</h2>
+        </div>
+        <div class="apps">
+          <picture class="content-icons">
+            <img class="icon1" src="assets/assets/pattern-apps.svg" alt="apps">
+          </picture>
+          <h2>Aplicaciones</h2>
+        </div>
+        <div class="illustrations">
+          <picture class="content-icons">
+            <img class="icon1" src="assets/assets/pattern-illustrations.svg" alt="illustrations">
+          </picture>
+          <h2>Ilustraciones</h2>
+        </div>
+      </div>
+      <div class="box-skills2">
+        <div class="motion-graphics">
+          <picture class="content-icons">
+            <img class="icon1" src="assets/assets/pattern-motion-graphics.svg" alt="motion-graphics">
+          </picture>
+          <h2>Gráficos en Movimiento</h2>
+        </div>
+        <div class="photography">
+          <picture class="content-icons">
+            <img class="icon1" src="assets/assets/pattern-photography.svg" alt="photography">
+          </picture>
+          <h2>Fotografía</h2>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="bio-design-section-container">
+    <div class="bio-design-container">
+      <section class="bio-designer">
+        <picture class="amy-container">
+          <img class="amy" src="assets/assets/image-amy.webp" alt="imagen-amy">
+        </picture>
+        <div class="bio-content">
+          <h2>Soy Amy, y me encantaría trabajar en tu próximo proyecto</h2>
+          <p>Me encanta trabajar con otros para crear soluciones de diseño hermosas. He diseñado desde ilustraciones de marca hasta aplicaciones móviles completas. ¡También soy hábil con una cámara!</p>
+          <a href="#formulario">Consulta gratuita</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <h2 class="portfolio-title">Mi Trabajo</h2>
+
+  <section class="wrapper">
+    <div class="carousel">
+      <img src="assets/assets/image-slide-1.jpg" alt="slide1" draggable="false"onclick="openModal(this);">
+      <img src="assets/assets/image-slide-2.jpg" alt="slide2" draggable="false"onclick="openModal(this);">
+      <img src="assets/assets/image-slide-3.jpg" alt="slide3" draggable="false"onclick="openModal(this);">
+      <img src="assets/assets/image-slide-4.jpg" alt="slide4" draggable="false"onclick="openModal(this);">
+      <img src="assets/assets/image-slide-5.jpg" alt="slide5" draggable="false"onclick="openModal(this);">
+    </div>
+  </section>
+
+  <div class="arrow-container">
+    <div class="left-container">
+      <i class="left-arrow">
+        <img id="left" class="icon-left" src="assets/assets/icon-arrow-left.svg" alt="izquierda">
+      </i>
+    </div>
+    <div class="right-container">
+      <i class="right-arrow">
+        <img id="right" class="icon-right" src="assets/assets/icon-arrow-right.svg" alt="derecha">
+      </i>
+    </div>
+  </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal" onclick="closeModal();">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal();">&times;</span>
+          <img class="modal-image" id="modalImage">
+      </div>
+  </div>
+
+  <!-- Pie de página -->
+  <div class="footer-section-container">
+    <section class="footer">
+      <div class="footer-content">
+        <h2>Reserva una llamada conmigo</h2>
+        <p>Me encantaría tener una charla para ver cómo puedo ayudarte. El mejor primer paso es discutir tu proyecto durante una consulta gratuita. Luego podemos avanzar desde allí.</p>
+      </div>
+      <div class="bottom-box-footer"id="formulario">
+        <form>
+          <input type="text" placeholder="Nombre">
+          <input type="email" placeholder="Correo">
+          <textarea placeholder="Mensaje"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer-logo-container">
+    <section class="footer-section">
+      <picture class="logo-black">
+        <img src="assets/assets/favicon.png" alt="logo">
+      </picture>
+      <div class="social-icons">
+        <i class="fab fa-twitter" style="color: black; font-size: 32px;"></i>
+        <i class="fab fa-github" style="color: black; font-size: 32px;"></i>
+        <i class="fab fa-linkedin" style="color: black; font-size: 32px;"></i>
+      </div>
+    </section>
+  </div>
+
+  
+</body>
+
+</html>
